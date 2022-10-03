@@ -19,7 +19,11 @@ if (isset($_POST["submit"])) {
 ?>
 
 
+<<<<<<< HEAD
 <h3>Ubah Data</h3>
+=======
+<h3>Change</h3>
+>>>>>>> 9402c6e58f5250a008511948b8f4af153964d6d2
 <form action="" method="post">
 <input type="hidden" name="id" value="<?= $book['id']; ?>">
     <ul>
