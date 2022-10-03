@@ -22,13 +22,12 @@ function tambah($data)
 
     $nama = htmlspecialchars($data['nama']);
     $penulis = htmlspecialchars($data['penulis']);
-    $penerbit = htmlspecialchars($data['penerbit']);
     $gambar = htmlspecialchars($data['gambar']);
 
     $query = "INSERT INTO
                 buku
             VALUES
-            (null, '$nama', '$penulis', '$penerbit', '$gambar');
+            (null, '$nama', '$penulis', '$gambar');
             ";
     mysqli_query($conn, $query) or die(mysqli_error($conn));
     return mysqli_affected_rows($conn);
@@ -50,13 +49,11 @@ function ubah($data)
     $id = $data['id'];
     $nama = htmlspecialchars($data['nama']);
     $penulis = htmlspecialchars($data['penulis']);
-    $penerbit = htmlspecialchars($data['penerbit']);
     $gambar = htmlspecialchars($data['gambar']);
 
     $query = "UPDATE buku SET
               nama = '$nama',
               penulis = '$penulis',
-              penerbit = '$penerbit',
               gambar = '$gambar',
             WHERE id = $id";
     mysqli_query($conn, $query) or die(mysqli_error($conn));
@@ -73,7 +70,6 @@ function cari($keyword)
     WHERE 
     nama LIKE '%$keyword%' OR
     penulis LIKE '%$keyword%' OR
-    penerbit LIKE '%$keyword%' OR
     gambar LIKE '%$keyword%'
     ";
 

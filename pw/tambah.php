@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
         </li>
         <button type="submit" name="submit">ADD</button>
         <button type="submit">
-            <a href="admin.php" style="text-decoration: none; color: black;">Back</a>
+            <a href="index.php" style="text-decoration: none; color: black;">Back</a>
         </button>
     </ul>
 </form>
