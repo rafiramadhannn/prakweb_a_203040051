@@ -19,7 +19,7 @@ if (isset($_POST["submit"])) {
 ?>
 
 
-<h3>Changed</h3>
+<h3>Change</h3>
 <form action="" method="post">
 <input type="hidden" name="id" value="<?= $book['id']; ?>">
     <ul>
